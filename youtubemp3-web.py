@@ -4,7 +4,7 @@ import youtube_dl
 app = Flask(__name__)
 
 ydl_opts = {
-    'format': 'bestaudio/best',
+    'format': 'bestaudio',
     'outtmpl': 'mp3s/%(title)s.%(ext)s',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
